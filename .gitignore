@@ -1,0 +1,82 @@
+.DS_Store
+
+# Go build and cache
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Logs and runtime data
+*.log
+*.tmp
+*.swp
+config.db
+nofx
+web.log
+decision_logs/
+
+# Python virtual environments
+examples/venv/
+examples/__pycache__/
+*.pyc
+
+# Node dependencies and build artifacts
+web/node_modules/
+web/.pnpm-store/
+web/.yarn/
+web/.cache/
+web/.vite/
+web/dist/
+
+# Archives
+*.zip
+# IDE 配置文件
+.idea/
+*.iml
+*.xml
+
+# AI 工具
+.claude/
+
+# 编译产物
+nofx-auto
+*.exe
+nofx
+nofx_test
+
+# Go 相关
+*.test
+*.out
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.log
+*.tmp
+*.bak
+*.backup
+
+# 环境变量
+.env
+config.json
+config.db
+
+# 决策日志
+decision_logs/
+coin_pool_cache/
+nofx_test
+
+# Node.js
+web/node_modules/
+node_modules/
+web/dist/
+web/.vite/
+
+# ESLint 临时报告文件（调试时生成，不纳入版本控制）
+eslint-*.json

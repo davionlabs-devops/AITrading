@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  signal-api:
+    build: .
+    container_name: nofx-signal-api
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - BINANCE_API_TIMEOUT=10
+      - CACHE_TTL=300
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # 可选：Redis缓存服务
+  # redis:
+  #   image: redis:7-alpine
+  #   container_name: nofx-redis
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis-data:/data
+  #   restart: unless-stopped
+
+# volumes:
+#   redis-data:
+
+

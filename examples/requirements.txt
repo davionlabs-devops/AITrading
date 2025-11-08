@@ -1,0 +1,14 @@
+flask>=2.3.0
+flask-cors>=4.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# 可选：如果需要使用Redis缓存
+# redis>=5.0.0
+
+# 可选：如果需要使用数据库
+# sqlalchemy>=2.0.0
+# psycopg2-binary>=2.9.0  # PostgreSQL
+# pymysql>=1.1.0  # MySQL
+
+
