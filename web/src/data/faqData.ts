@@ -38,8 +38,8 @@ export const faqCategories: FAQCategory[] = [
     items: [
       {
         id: 'what-is-nofx',
-        questionKey: 'faqWhatIsNOFX',
-        answerKey: 'faqWhatIsNOFXAnswer',
+        questionKey: 'faqWhatIsAPEXAI',
+        answerKey: 'faqWhatIsAPEXAIAnswer',
       },
       {
         id: 'supported-exchanges',

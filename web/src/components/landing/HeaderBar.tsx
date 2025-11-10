@@ -63,12 +63,12 @@ export default function HeaderBar({
             href="/"
             className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer"
           >
-            <img src="/icons/nofx.svg" alt="NOFX Logo" className="w-8 h-8" />
+       
             <span
               className="text-xl font-bold"
               style={{ color: 'var(--brand-yellow)' }}
             >
-              NOFX
+              APEXAI
             </span>
             <span
               className="text-sm hidden sm:block"
@@ -214,48 +214,7 @@ export default function HeaderBar({
                     {t('dashboardNav', language)}
                   </button>
 
-                  <button
-                    onClick={() => {
-                      console.log(
-                        'FAQ button clicked, onPageChange:',
-                        onPageChange
-                      )
-                      onPageChange?.('faq')
-                    }}
-                    className="text-sm font-bold transition-all duration-300 relative focus:outline-2 focus:outline-yellow-500"
-                    style={{
-                      color:
-                        currentPage === 'faq'
-                          ? 'var(--brand-yellow)'
-                          : 'var(--brand-light-gray)',
-                      padding: '8px 16px',
-                      borderRadius: '8px',
-                      position: 'relative',
-                    }}
-                    onMouseEnter={(e) => {
-                      if (currentPage !== 'faq') {
-                        e.currentTarget.style.color = 'var(--brand-yellow)'
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (currentPage !== 'faq') {
-                        e.currentTarget.style.color = 'var(--brand-light-gray)'
-                      }
-                    }}
-                  >
-                    {/* Background for selected state */}
-                    {currentPage === 'faq' && (
-                      <span
-                        className="absolute inset-0 rounded-lg"
-                        style={{
-                          background: 'rgba(240, 185, 11, 0.15)',
-                          zIndex: -1,
-                        }}
-                      />
-                    )}
-
-                    {t('faqNav', language)}
-                  </button>
+         
                 </>
               ) : (
                 // Landing page navigation when not logged in
@@ -297,42 +256,7 @@ export default function HeaderBar({
                     {t('realtimeNav', language)}
                   </a>
 
-                  <a
-                    href="/faq"
-                    className="text-sm font-bold transition-all duration-300 relative focus:outline-2 focus:outline-yellow-500"
-                    style={{
-                      color:
-                        currentPage === 'faq'
-                          ? 'var(--brand-yellow)'
-                          : 'var(--brand-light-gray)',
-                      padding: '8px 16px',
-                      borderRadius: '8px',
-                      position: 'relative',
-                    }}
-                    onMouseEnter={(e) => {
-                      if (currentPage !== 'faq') {
-                        e.currentTarget.style.color = 'var(--brand-yellow)'
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (currentPage !== 'faq') {
-                        e.currentTarget.style.color = 'var(--brand-light-gray)'
-                      }
-                    }}
-                  >
-                    {/* Background for selected state */}
-                    {currentPage === 'faq' && (
-                      <span
-                        className="absolute inset-0 rounded-lg"
-                        style={{
-                          background: 'rgba(240, 185, 11, 0.15)',
-                          zIndex: -1,
-                        }}
-                      />
-                    )}
-
-                    {t('faqNav', language)}
-                  </a>
+         
                 </>
               )}
             </div>
@@ -340,7 +264,7 @@ export default function HeaderBar({
             {/* Right Side - Original Navigation Items and Login */}
             <div className="flex items-center gap-6">
               {/* Only show original navigation items on home page */}
-              {isHomePage &&
+              {/* {isHomePage &&
                 [
                   { key: 'features', label: t('features', language) },
                   { key: 'howItWorks', label: t('howItWorks', language) },
@@ -375,7 +299,7 @@ export default function HeaderBar({
                       style={{ background: 'var(--brand-yellow)' }}
                     />
                   </a>
-                ))}
+                ))} */}
 
               {/* User Info and Actions */}
               {isLoggedIn && user ? (

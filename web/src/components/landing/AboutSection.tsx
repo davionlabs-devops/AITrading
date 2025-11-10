@@ -58,9 +58,9 @@ export default function AboutSection({ language }: AboutSectionProps) {
               className="text-lg leading-relaxed"
               style={{ color: 'var(--text-secondary)' }}
             >
-              {t('nofxDescription3', language)}{' '}
-              {t('nofxDescription4', language)}{' '}
-              {t('nofxDescription5', language)}
+              {/* {t('nofxDescription3', language)}{' '} */}
+              {/* {t('nofxDescription4', language)}{' '} */}
+              {/* {t('nofxDescription5', language)} */}
             </p>
             <motion.div
               className="flex items-center gap-3 pt-4"
@@ -102,13 +102,13 @@ export default function AboutSection({ language }: AboutSectionProps) {
             >
               <Typewriter
                 lines={[
-                  '$ git clone https://github.com/tinkle-community/nofx.git',
-                  '$ cd nofx',
-                  '$ chmod +x start.sh',
-                  '$ ./start.sh start --build',
-                  t('startupMessages1', language),
-                  t('startupMessages2', language),
-                  t('startupMessages3', language),
+                  '$ 输入你的api key',
+                  '$ 运行项目',
+                  '$ 用APEX AI 实现你的梦想',
+                  '$ 快来交易吧',
+                  // t('startupMessages1', language),
+                  // t('startupMessages2', language),
+                  // t('startupMessages3', language),
                 ]}
                 typingSpeed={70}
                 lineDelay={900}

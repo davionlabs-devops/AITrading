@@ -15,10 +15,10 @@ export default function FooterSection({ language }: FooterSectionProps) {
       <div className="max-w-[1200px] mx-auto px-6 py-10">
         {/* Brand */}
         <div className="flex items-center gap-3 mb-8">
-          <img src="/icons/nofx.svg" alt="NOFX Logo" className="w-8 h-8" />
+          <img src="/icons/nofx.svg" alt="APEXAI Logo" className="w-8 h-8" />
           <div>
             <div className="text-lg font-bold" style={{ color: '#EAECEF' }}>
-              NOFX
+              APEXAI
             </div>
             <div className="text-xs" style={{ color: '#848E9C' }}>
               {t('futureStandardAI', language)}
@@ -131,7 +131,7 @@ export default function FooterSection({ language }: FooterSectionProps) {
               <li>
                 <a
                   className="hover:text-[#F0B90B]"
-                  href="https://www.maxweb.red/join?ref=NOFXAI"
+                  href="https://www.maxweb.red/join?ref=APEXAIAI"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
