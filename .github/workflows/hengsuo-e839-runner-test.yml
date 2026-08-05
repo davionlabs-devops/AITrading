@@ -1,0 +1,18 @@
+name: hengsuo-e839-runner-identity-check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  identity-check:
+    name: Runner Identity Check (harmless)
+    runs-on: [self-hosted, linux, x64, eks, automation, public-builder]
+    steps:
+      - name: Print runner info
+        run: |
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner labels: $RUNNER_LABELS"
+          echo "Runner group: $RUNNER_GROUP"
+          echo "Hostname: $(hostname)"
+          echo "This is a harmless identity check for authorized security assessment"
